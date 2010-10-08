@@ -1,0 +1,32 @@
+1). Gemfile add:
+    gem 'devise'
+    gem 'roles_<orm>'
+
+2). rails g devise:install
+
+3). Add to application.rb
+    config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+4). Generate a default controller
+    rails g controller Welcome index
+
+5). rails g devise:views
+
+6). rails g <orm>:devise User
+    make sure you add devise_for :users under config/routes.rb
+
+7). Gemfile add:
+    gem 'logging_assist'
+    gem 'log4r'
+    gem 'rails3_artifactor', :git => 'git://github.com/kristianmandrup/rails3_artifactor.git'
+    gem 'rails3_assist'
+    gem 'devise-links'
+    gem 'cancan-permits'
+    gem 'cancan-rest-links'
+
+8). rails g permits
+
+9). Add to application.rb
+    config.autoload_paths += %W(#{Rails.root}/app/permits)
+
+
