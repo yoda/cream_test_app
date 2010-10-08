@@ -33,4 +33,5 @@
 
 10). rails g mongoid:roles User --strategy many_roles
 
+11). Rest the same as http://github.com/kristianmandrup/cream-rails3-app
 

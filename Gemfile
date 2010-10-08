@@ -7,7 +7,7 @@ gem 'devise'
 gem 'mongoid'
 gem 'roles_mongoid'
 
-#gem 'cream'
+gem 'cream'
 gem 'logging_assist'
 gem 'log4r'
 gem 'rails3_artifactor', :git => 'git://github.com/kristianmandrup/rails3_artifactor.git'
