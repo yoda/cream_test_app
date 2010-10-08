@@ -20,13 +20,17 @@
     gem 'log4r'
     gem 'rails3_artifactor', :git => 'git://github.com/kristianmandrup/rails3_artifactor.git'
     gem 'rails3_assist'
+    gem 'r3_plugin_toolbox'
     gem 'devise-links'
     gem 'cancan-permits'
     gem 'cancan-rest-links'
+    gem 'sugar-high'
 
 8). rails g permits
 
 9). Add to application.rb
     config.autoload_paths += %W(#{Rails.root}/app/permits)
+
+10). rails g mongoid:roles User --strategy many_roles
 
 
