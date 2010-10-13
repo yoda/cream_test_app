@@ -13,11 +13,10 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.xml
   def show
-    @post = Post.first(params[:id])
+    @post = Post.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @post }
     end
   end
 
@@ -34,7 +33,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
-    @post = Post.first(params[:id])
+    @post = Post.find(params[:id])
   end
 
   # POST /posts

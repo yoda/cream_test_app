@@ -5,6 +5,8 @@ class UserAdminLicense < License::Base
 
   def enforce!
     can(:manage, User)
+    can(:read, Post)
+    can(:create, Post)
   end
 end
 
