@@ -1,4 +1,4 @@
-class AnyPermit < Permit::Base
+class GuestPermit < Permit::Base
   def initialize(ability)
     super
   end

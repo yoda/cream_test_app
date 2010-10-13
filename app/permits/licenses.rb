@@ -14,9 +14,18 @@ class BloggingLicense < License::Base
   end
   
   def enforce!
-    can(:read, Blog)
+    can(:read, Post)
     can(:create, Post)
     owns(user, Post)
   end
 end
 
+class GuestLicense < License::Base
+  def initialize name
+    super
+  end
+  
+  def enforce!
+    can(:read, Post)
+  end
+end
