@@ -11,5 +11,8 @@ class User
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   
+  def self.defined_roles
+    [:user, :admin, :guest]
+  end
 
 end

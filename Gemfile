@@ -15,8 +15,8 @@ gem 'rails3_artifactor', :git => 'git://github.com/kristianmandrup/rails3_artifa
 gem 'rails3_assist'
 gem 'r3_plugin_toolbox'
 gem 'devise-links'
-gem 'cancan'
+gem 'cancan', '1.4.0'
 gem 'cancan-permits', :git => 'git://github.com/yoda/cancan-permits.git'
-gem 'cancan-rest-links'
+gem 'cancan-rest-links', :git => 'git://github.com/yoda/cancan-rest-links.git'
 gem 'sugar-high'
 

@@ -11,20 +11,30 @@ GIT
 
 GIT
   remote: git://github.com/yoda/cancan-permits.git
-  revision: 06b0427ac76b4851fc25b35c9cbc662cf973316e
+  revision: 1ecab8e303bb22c3310dcc32d577d8d59002a65e
   specs:
-    cancan-permits (0.1.4)
-      cancan (~> 1.3.2)
+    cancan-permits (0.2.3)
+      cancan (~> 1.4.0)
+      require_all (~> 1.2.0)
+      sugar-high (~> 0.2.10)
+
+GIT
+  remote: git://github.com/yoda/cancan-rest-links.git
+  revision: 28bc7ef635ebbf6883fcb48565f95b809368fb6b
+  specs:
+    cancan-rest-links (0.1.3)
+      cancan (~> 1.4.0)
+      r3_plugin_toolbox (~> 0.3.6)
       require_all (~> 1.2.0)
       sugar-high (~> 0.2.10)
 
 GIT
   remote: git://github.com/yoda/cream.git
-  revision: f67be4c632b1bb79c2b92eb8d60dd329ea7dd9e7
+  revision: 29fd53f2f3b11315648d8c503320e5c1792b15d7
   specs:
-    cream (0.6.4)
-      cancan (~> 1.3.4)
-      cancan-permits (~> 0.1.3)
+    cream (0.6.5)
+      cancan (~> 1.4.0)
+      cancan-permits (~> 0.2.3)
       cancan-rest-links (~> 0.1.3)
       devise (>= 1.1.2)
       devise-links (~> 0.1.4)
@@ -92,12 +102,7 @@ GEM
     bcrypt-ruby (2.1.2)
     bson (1.0.9)
     builder (2.1.2)
-    cancan (1.3.4)
-    cancan-rest-links (0.1.3)
-      cancan (~> 1.3.4)
-      r3_plugin_toolbox (~> 0.3.6)
-      require_all (~> 1.2.0)
-      sugar-high (~> 0.2.10)
+    cancan (1.4.0)
     devise (1.1.3)
       bcrypt-ruby (~> 2.1.2)
       warden (~> 0.10.7)
@@ -188,9 +193,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cancan
+  cancan (= 1.4.0)
   cancan-permits!
-  cancan-rest-links
+  cancan-rest-links!
   cream!
   devise
   devise-links

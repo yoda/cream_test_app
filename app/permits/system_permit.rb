@@ -1,11 +1,12 @@
 class SystemPermit < Permit::Base
-  def initialize(ability)
+  def initialize(ability, options = {})
     super
   end
 
-  def permit?(user, request=nil) 
+  def permit?(user, options = {})    
     super
-        
-    licenses :user_admin, :blogging
+    return if !role_match? user
+
+    can :manage, :all    
   end  
 end

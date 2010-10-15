@@ -55,7 +55,7 @@ class PostsController < ApplicationController
   # PUT /posts/1
   # PUT /posts/1.xml
   def update
-    @post = Post.first(params[:id])
+    @post = Post.find(params[:id])
 
     respond_to do |format|
       if @post.update(params[:post])
@@ -71,7 +71,7 @@ class PostsController < ApplicationController
   # DELETE /posts/1
   # DELETE /posts/1.xml
   def destroy
-    @post = Post.first(params[:id])
+    @post = Post.find(params[:id])
     @post.destroy
 
     respond_to do |format|

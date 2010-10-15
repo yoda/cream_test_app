@@ -1,4 +1,4 @@
-class AnyPermit < Permit::Base
+class UserPermit < Permit::Base
   def initialize(ability, options = {})
     super
   end
@@ -8,6 +8,7 @@ class AnyPermit < Permit::Base
     return if !role_match? user
 
     can :read, Post
+    can :create, Post
 
   end  
 end
